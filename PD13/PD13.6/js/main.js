@@ -1,40 +1,16 @@
-// Tikriname ar a yra b daliklis naudodami if-then
-function isDivisibleIfThen(a, b) {
-  if (b === 0) {
-      console.log("Dalyba iš nulio negalima.");
-  } else if (a % b === 0) {
-      console.log(`${a} dalijasi iš ${b} be liekanos.`);
-  } else {
-      console.log(`${a} nedalijasi iš ${b} be liekanos.`);
-  }
+const dvizenklisSkaicius = 57;
+
+const desimtys = Math.floor(dvizenklisSkaicius / 10);
+const vienetai = dvizenklisSkaicius % 10;
+
+let didesnisSkaitmuo;
+
+if (desimtys > vienetai) {
+    didesnisSkaitmuo = "dešimtys";
+} else if (desimtys < vienetai) {
+    didesnisSkaitmuo = "vienetai";
+} else {
+    didesnisSkaitmuo = "skaitmenys yra lygūs";
 }
 
-// Tikriname ar a yra b daliklis naudodami if-then-else
-function isDivisibleIfThenElse(a, b) {
-  if (b === 0) {
-      console.log("Dalyba iš nulio negalima.");
-  } else {
-      if (a % b === 0) {
-          console.log(`${a} dalijasi iš ${b} be liekanos.`);
-      } else {
-          console.log(`${a} nedalijasi iš ${b} be liekanos.`);
-      }
-  }
-}
-
-// Tikriname ar a yra b daliklis naudodami switch
-function isDivisibleSwitch(a, b) {
-  if (b === 0) {
-      console.log("Dalyba iš nulio negalima.");
-  } else {
-      switch (a % b) {
-          case 0:
-              console.log(`${a} dalijasi iš ${b} be liekanos.`);
-              break;
-          default:
-              console.log(`${a} nedalijasi iš ${b} be liekanos.`);
-      }
-  }
-}
-
-console.log(isDivisibleIfThen)
+console.log(`Didesnis skaitmuo: ${didesnisSkaitmuo}`);
