@@ -1,0 +1,67 @@
+/* index.css */
+
+.card-img-top-custom {
+  height: 200px;
+  object-fit: cover;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.custom-card {
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-per-month {
+  color: green;
+  font-size: 1.25rem;
+}
+
+.total-price {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  text-align: center;
+}
+
+.compare-button {
+  margin: 10px;
+  color: #b7b7b7;
+}
